@@ -1,0 +1,89 @@
+.courant {
+	color: black;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+	line-height: 16px;
+}
+
+.courant p { font-size: 13px; line-height: 16px; margin-top: 0; margin-right: 15px; margin-bottom: 10px; }
+.courant h1 { font-size: 16px; font-weight: normal; font-style: italic; line-height: 17px; margin-top: 5px; margin-right: 15px; margin-bottom: 3px; }
+.courant h2 { color: #09f; font-size: 16px; font-style: italic; font-weight: bold; line-height: 19px; margin-top: 5px; margin-right: 15px; margin-bottom: 3px; }
+.courant ul { margin: 0 15px 12px 0;
+}
+.courant li { list-style-type: disc; list-style-position: outside;
+	margin: 0 15px 0 -25px;
+}
+#texte {
+	width: 575px;
+	margin-left: -175;
+	position: absolute;
+	left: 50%;
+	top: 200px;
+}
+#web {
+	width: 210px;
+	left: 50%;
+	top: 400px;
+	position: absolute;
+	margin-left: -430px;
+	text-align: right;
+}
+
+
+#animation {
+	height: 195px;
+	width: 775px;
+	left: 50%;
+	top: 0;
+	position: absolute;
+	z-index: 10;
+	visibility: visible;
+	margin-left: -387px;
+}
+#contenubox {
+	left: 0px;
+	position: absolute;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+}
+#fond {
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+body {
+	height: 100%;
+	width: 100%;
+}
+#ronde {
+	background-image: url(ronde.jpg);
+	background-repeat: no-repeat;
+	left: 50%;
+	top: 90px;
+	position: absolute;
+	margin-left: -450px;
+	height: 591%;
+	width: 637px;
+}
+#photobox {
+	height: 192px;
+	width: 239px;
+	left: 50%;
+	top: 195px;
+	position: absolute;
+	margin-left: -430px;
+}
+#aquadetox {
+	height: 256px;
+	width: 231px;
+	left: 50%;
+	top: 412px;
+	position: absolute;
+	margin-left: -430px;
+	cursor: pointer;
+}

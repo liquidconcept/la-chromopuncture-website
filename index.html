@@ -1,0 +1,106 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generator" content="Adobe GoLive" />
+		<title>LA-CHROMOPUNCTURE.CH</title>
+		<style type="text/css" media="screen">
+		<!--
+#animation { height: 195px; width: 775px; left: 50%; top: 0; position: absolute; z-index: 10; visibility: visible; margin-left: -387px; }
+#contenubox {
+	left: 50%;
+	position: absolute;
+	z-index: 5;
+	overflow: visible;
+	visibility: visible;
+	margin-left: -175px;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+#ronde {
+	background-image: url(ronde.jpg);
+	background-repeat: no-repeat;
+	left: 50%;
+	top: 90px;
+	position: absolute;
+	z-index: 1;
+	visibility: visible;
+	margin-left: -450px;
+	height: 100%;
+	width: auto;
+	right: 0px;
+}
+#photobox { height: 192px; width: 239px; left: 50%; top: 195px; position: absolute; z-index: 2; visibility: visible; margin-left: -430px; }
+
+--></style>
+
+<script type="text/javascript" src="scripts/swfobject.js"></script>
+
+<!--[if lt IE 7]>
+<script language="JavaScript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+   var arVersion = navigator.appVersion.split("MSIE")
+   var version = parseFloat(arVersion[1])
+   if ((version >= 5.5) && (document.body.filters)) 
+   {
+      for(var i=0; i<document.images.length; i++)
+      {
+         var img = document.images[i]
+         var imgName = img.src.toUpperCase()
+         if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+         {
+            var imgID = (img.id) ? "id='" + img.id + "' " : ""
+            var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+            var imgStyle = "display:inline-block;" + img.style.cssText 
+            if (img.align == "left") imgStyle = "float:left;" + imgStyle
+            if (img.align == "right") imgStyle = "float:right;" + imgStyle
+            if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+            img.outerHTML = strNewHTML
+            i = i-1
+         }
+      }
+   }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+
+
+
+	</head>
+
+	<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+		<div id="animation">
+		<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("navchromo.swf", "animationswf", "775", "195", "8", "#ffffff");
+		so.write("animation");
+		// ]]>
+		</script>
+		</div>
+		<div id="contenubox">
+			<iframe id="contenu" name="contenu" src="vide.html" frameborder="0" height="100%" width="100%" allowtransparency="true"></iframe>
+		</div>
+		<div id="ronde">
+			</div>
+		<div id="photobox">
+		<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("imgrub.swf", "photoswf", "239", "192", "8", "#ffffff");
+		so.write("photobox");
+		// ]]>
+		</script>
+			</div>
+	</body>
+
+</html>
